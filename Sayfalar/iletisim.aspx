@@ -61,7 +61,7 @@
                         Mustafa Kemal Mah. Dumlupınar Bul. No: 274 <br />
                         Mahall İş Merkezi E Blok No:78 06530 Çankaya/ANKARA/TÜRKİYE
                     </p>
-                    <p><strong>Telefon:</strong>+90 (535) 372 96 98</p>
+                    <%--<p><strong>Telefon:</strong>+90 (535) 372 96 98</p>--%>
                     <p><strong>E-Mail:</strong> info@esgpartner.com.tr</p>
                     <p><strong>Çalışma Saatlerimiz:</strong> Pzt-Cum: 09.00-17.00 </p>
                 </div>

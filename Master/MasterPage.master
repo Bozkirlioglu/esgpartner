@@ -115,7 +115,7 @@
                         </div>
                         <div class="margin-bottom-30">
                             <p>
-                                <i class="fa fa-phone"></i>+90 (535) 372 96 98
+                            <%--<i class="fa fa-phone"></i>+90 (535) 372 96 98--%>
                             <%--<br />
                                 <i class="fa fa-envelope"></i> info@esgpartner.com..tr--%>
                             </p>

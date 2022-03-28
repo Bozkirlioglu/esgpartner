@@ -13,7 +13,7 @@
     <header class="hero-header" style="background-image: url('../library/img/slider2.png');">
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Ekolojik bir dünya için birlikte hareket edelim...</div>
+                <div class="intro-lead-in">Sürdürülebilir bir dünya için birlikte hareket edelim...</div>
                 <div class="intro-heading">Sürdürülebilirlik Danışmanlığı <br />
                     Karbon Ayakizi Danışmanlığı <br />
                     Eğitimler ve Çalıştaylar
