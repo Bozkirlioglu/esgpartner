@@ -1,0 +1,10 @@
+﻿.modalBackground { background-color: Black; filter: alpha(opacity=40); opacity: 0.4; }
+.modalPopup { background-color: #FFFFFF; width: 400px; }
+.modalPopup .header {background-color: #80C5E0; height: 30px; color: White; line-height: 30px; text-align: center; font-weight: bold;}
+.modalPopup .body { min-height: 50px; line-height: 30px; text-align: center; font-weight: bold; }
+.modalPopup .footer { padding: 10px; float:right; }
+.modalPopup .yes, .modalPopup .no { width:75px; height: 29px; color: White; /*line-height: 23px;*/ text-align: center; font-weight: bold; cursor: pointer; }
+.modalPopup .yes { background-color: #80C5E0; /*border: 1px solid #0DA9D0;*/ }
+.modalPopup .yes:hover {background-color:#0DA9D0;}
+.modalPopup .no { background-color: #80C5E0; /*border: 1px solid #5C5C5C;*/ }
+.modalPopup .no:hover { background-color:#666; }

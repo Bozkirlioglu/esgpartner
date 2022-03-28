@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Panel.master.cs" Inherits="main_Panel" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="../css/adminstyle.css" rel="stylesheet" />
+    <script src="../library/js/jquery-1.10.2.js"></script>
+
+    <title>SeikoSoft Yönetim Paneli </title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="kapla">
+            <div id="header">
+                <div class="inHeader">
+                    <div class="seikosoftAdmin">
+                        <asp:Literal ID="literal_kullanici" runat="server" /><br />
+                        <a href="#">Websitesine Git</a> |
+                        <asp:LinkButton ID="cikis" runat="server" Text="Güvenli Çıkış" OnClick="LinkbuttonCikis_Click"></asp:LinkButton>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div id="wrapper">
+
+                <div id="leftBar">
+                    <ul>
+                        <li><a href="../main/Default.aspx">Pano</a></li>
+                        <li><a href="../kategori_yonetimi/kategori.aspx">Kategoriler</a></li>
+                        <li><a href="../icerik_yonetimi/icerik.aspx">İçerik</a></li>
+                        <li><a href="../slider_yonetimi/slider.aspx">Slider</a></li>
+                        <li><a href="../form_yonetimi/formlar.aspx">Formlar</a></li>
+                        <li><a href="../genel_ayarlar/ayarlar.aspx">Ayarlar</a></li>
+                    </ul>
+                </div>
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+                <div class="clear"></div>
+
+                <div id="footer">
+                    © 2014 Seikosoft | <a href="#">Website: </a>| designed <a href="#">Serkan BOZKIRLIOĞLU</a>
+                </div>
+
+
+            </div>
+            <!--wrapper-->
+
+        </div>
+    </form>
+</body>
+</html>
