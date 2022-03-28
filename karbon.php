@@ -81,7 +81,7 @@
    <div style="margin: 30px 0">
        <div class="container">
            <div class="text-center">
-               <img alt="esg logo" src="./library/img/logo-footer.png" width="200px" height="200px"/>
+               <img alt="esg logo" src="./library/img/logo-footer.png"/>
                <hr>
                    <h5>KARBON AYAK IZI HESAPLAMA FORMU (taslak) </h5>
                <hr>
