@@ -83,7 +83,7 @@
            <div class="text-center">
                 <a href="/"><img alt="esg logo" src="./library/img/logo-footer.png"/></a>
                <hr>
-                   <h5>KARBON AYAK IZI HESAPLAMA FORMU (taslak) </h5>
+                   <h5>KARBON AYAK IZI HESAPLAMA FORMU </h5>
                <hr>
            </div>
         <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
