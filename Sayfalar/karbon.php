@@ -49,7 +49,7 @@
         }
 
         function writeMsg() {
-            global $tdgaz, $tjmot, $tamot, $taben, $talpg ;
+            global $tdgaz, $tjmot, $tamot, $taben, $talpg, $telk ;
             $k1dgaz = array( 0.75, 48, 56.1, 0.005, 0.0001 );
             $k1jmot = array( 0.85, 43, 74.1, 0.01, 0.0006);
             $k1amot = array( 0.85, 43, 74.1, 0.0039, 0.0039);
@@ -69,7 +69,8 @@
                 $Emisyon3 = ($tamotton * $k1amot[1] * $k1amot[2] / 1000 )+($tamotton * $k1amot[1] * $k1amot[3] /1000 * 28 )+($tamotton * $k1amot[1] * $k1amot[4] / 1000 * 265 );
                 $Emisyon4 = ($tabenton * $k1aben[1] * $k1aben[2] / 1000 )+($tabenton * $k1aben[1] * $k1aben[3] /1000 * 28 )+($tabenton * $k1aben[1] * $k1aben[4] / 1000 * 265 );
                 $Emisyon5 = ($talpgton * $k1alpg[1] * $k1alpg[2] / 1000 )+($talpgton * $k1alpg[1] * $k1alpg[3] /1000 * 28 )+($talpgton * $k1alpg[1] * $k1alpg[4] / 1000 * 265 );
-                $Emisyon = $Emisyon1 + $Emisyon2 + $Emisyon3 + $Emisyon4 + $Emisyon5;
+                $Emisyon6 = ($telk * 0.00045)
+                $Emisyon = $Emisyon1 + $Emisyon2 + $Emisyon3 + $Emisyon4 + $Emisyon5 + $Emisyon6;
                 
                 echo "Tesisin Emisyonu <strong>";
                 echo number_format($Emisyon, 2, ",", ".");
@@ -114,6 +115,14 @@
                 </tr>
                 <tr>
                     <td colspan=2><hr></td>
+                </tr>
+            </table>
+            <div class="text-center">
+                <h5>KAPSAM 2</h5>
+            </div>
+            <table>
+                <tr>
+                    <td>Tesisin tükettiği <strong>Elektrik</strong> miktarı (kWh): </td><td><input type="text" name="telk" <?php echo "value=" . number_format($telk, 2, ',', '.');?>></td>
                 </tr>
             </table>
             <div class="text-center">
