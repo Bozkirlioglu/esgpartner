@@ -46,6 +46,7 @@
             $tamot = strtonumber($_POST['tamot']);
             $taben = strtonumber($_POST['taben']);
             $talpg = strtonumber($_POST['talpg']);
+            $telk = strtonumber($_POST['telk']);
         }
 
         function writeMsg() {
