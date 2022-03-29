@@ -51,7 +51,7 @@
         }
 
         function writeMsg() {
-            global $tdgaz, $tjmot, $tamot, $taben, $talpg, $telk ;
+            global $tdgaz, $tkom, $tjmot, $tamot, $taben, $talpg, $telk ;
             $k1dgaz = array( 0.75, 48, 56.1, 0.005, 0.0001 );
             $k1jmot = array( 0.85, 43, 74.1, 0.01, 0.0006);
             $k1amot = array( 0.85, 43, 74.1, 0.0039, 0.0039);
