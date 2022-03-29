@@ -99,6 +99,9 @@
                     <td>Tesisin tükettiği <strong>doğalgaz</strong> miktarı (m<sup>3</sup>): </td><td><input type="text" name="tdgaz" <?php echo "value=" . number_format($tdgaz, 2, ',', '.');?>></td>
                 </tr>
                 <tr>
+                    <td colspan=2><hr></td>
+                </tr>
+                <tr>
                     <td>Tesisin tükettiği <strong>kömür</strong> miktarı (ton): </td><td><input type="text" name="tkom" <?php echo "value=" . number_format($tkom, 2, ',', '.');?>></td>
                 </tr>
                 <tr>
