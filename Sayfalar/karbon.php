@@ -57,7 +57,7 @@
             $k1aben = array( 0.78, 44.3, 69.3, 0.025, 0.008);
             $k1alpg = array( 0.56, 47.3, 63.1, 0.062, 0.0002);
 
-            if (empty($tdgaz) && empty($tjmot) && empty($tamot) && empty($taben) && empty($talpg)) {
+            if (empty($tdgaz) && empty($tjmot) && empty($tamot) && empty($taben) && empty($talpg) && empty($telk)) {
                 echo "";
             } else {
                 $tdgazton = $tdgaz * $k1dgaz[0] / 1000 ;
