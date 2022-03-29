@@ -69,7 +69,7 @@
                 $Emisyon3 = ($tamotton * $k1amot[1] * $k1amot[2] / 1000 )+($tamotton * $k1amot[1] * $k1amot[3] /1000 * 28 )+($tamotton * $k1amot[1] * $k1amot[4] / 1000 * 265 );
                 $Emisyon4 = ($tabenton * $k1aben[1] * $k1aben[2] / 1000 )+($tabenton * $k1aben[1] * $k1aben[3] /1000 * 28 )+($tabenton * $k1aben[1] * $k1aben[4] / 1000 * 265 );
                 $Emisyon5 = ($talpgton * $k1alpg[1] * $k1alpg[2] / 1000 )+($talpgton * $k1alpg[1] * $k1alpg[3] /1000 * 28 )+($talpgton * $k1alpg[1] * $k1alpg[4] / 1000 * 265 );
-                $Emisyon6 = ($telk * 0.00045)
+                $Emisyon6 = ($telk * 0.00045);
                 $Emisyon = $Emisyon1 + $Emisyon2 + $Emisyon3 + $Emisyon4 + $Emisyon5 + $Emisyon6;
                 
                 echo "Tesisin Emisyonu <strong>";
