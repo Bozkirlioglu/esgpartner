@@ -42,6 +42,7 @@
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // collect value of input field
             $tdgaz = strtonumber($_POST['tdgaz']);
+            $tkom = strtonumber($_POST['tkom']);
             $tjmot = strtonumber($_POST['tjmot']);
             $tamot = strtonumber($_POST['tamot']);
             $taben = strtonumber($_POST['taben']);
@@ -57,7 +58,7 @@
             $k1aben = array( 0.78, 44.3, 69.3, 0.025, 0.008);
             $k1alpg = array( 0.56, 47.3, 63.1, 0.062, 0.0002);
 
-            if (empty($tdgaz) && empty($tjmot) && empty($tamot) && empty($taben) && empty($talpg) && empty($telk)) {
+            if (empty($tdgaz) && empty($tkom) && empty($tjmot) && empty($tamot) && empty($taben) && empty($talpg) && empty($telk)) {
                 echo "";
             } else {
                 $tdgazton = $tdgaz * $k1dgaz[0] / 1000 ;
@@ -66,12 +67,13 @@
                 $tabenton = $taben * $k1aben[0] / 1000 ;
                 $talpgton = $talpg * $k1alpg[0] / 1000 ;
                 $Emisyon1 = ($tdgazton * $k1dgaz[1] * $k1dgaz[2] / 1000 )+($tdgazton * $k1dgaz[1] * $k1dgaz[3] /1000 * 28 )+($tdgazton * $k1dgaz[1] * $k1dgaz[4] / 1000 * 265 );
-                $Emisyon2 = ($tjmotton * $k1jmot[1] * $k1jmot[2] / 1000 )+($tjmotton * $k1jmot[1] * $k1jmot[3] /1000 * 28 )+($tjmotton * $k1jmot[1] * $k1jmot[4] / 1000 * 265 );
-                $Emisyon3 = ($tamotton * $k1amot[1] * $k1amot[2] / 1000 )+($tamotton * $k1amot[1] * $k1amot[3] /1000 * 28 )+($tamotton * $k1amot[1] * $k1amot[4] / 1000 * 265 );
-                $Emisyon4 = ($tabenton * $k1aben[1] * $k1aben[2] / 1000 )+($tabenton * $k1aben[1] * $k1aben[3] /1000 * 28 )+($tabenton * $k1aben[1] * $k1aben[4] / 1000 * 265 );
-                $Emisyon5 = ($talpgton * $k1alpg[1] * $k1alpg[2] / 1000 )+($talpgton * $k1alpg[1] * $k1alpg[3] /1000 * 28 )+($talpgton * $k1alpg[1] * $k1alpg[4] / 1000 * 265 );
-                $Emisyon6 = ($telk * 0.00045);
-                $Emisyon = $Emisyon1 + $Emisyon2 + $Emisyon3 + $Emisyon4 + $Emisyon5 + $Emisyon6;
+                $Emisyon2 = ($tkom * 2);
+                $Emisyon3 = ($tjmotton * $k1jmot[1] * $k1jmot[2] / 1000 )+($tjmotton * $k1jmot[1] * $k1jmot[3] /1000 * 28 )+($tjmotton * $k1jmot[1] * $k1jmot[4] / 1000 * 265 );
+                $Emisyon4 = ($tamotton * $k1amot[1] * $k1amot[2] / 1000 )+($tamotton * $k1amot[1] * $k1amot[3] /1000 * 28 )+($tamotton * $k1amot[1] * $k1amot[4] / 1000 * 265 );
+                $Emisyon5 = ($tabenton * $k1aben[1] * $k1aben[2] / 1000 )+($tabenton * $k1aben[1] * $k1aben[3] /1000 * 28 )+($tabenton * $k1aben[1] * $k1aben[4] / 1000 * 265 );
+                $Emisyon6 = ($talpgton * $k1alpg[1] * $k1alpg[2] / 1000 )+($talpgton * $k1alpg[1] * $k1alpg[3] /1000 * 28 )+($talpgton * $k1alpg[1] * $k1alpg[4] / 1000 * 265 );
+                $Emisyon7 = ($telk * 0.00045);
+                $Emisyon = $Emisyon1 + $Emisyon2 + $Emisyon3 + $Emisyon4 + $Emisyon5 + $Emisyon6 + $Emisyon7;
                 
                 echo "Tesisin Emisyonu <strong>";
                 echo number_format($Emisyon, 2, ",", ".");
@@ -95,6 +97,9 @@
             <table>
                 <tr>
                     <td>Tesisin tükettiği <strong>doğalgaz</strong> miktarı (m<sup>3</sup>): </td><td><input type="text" name="tdgaz" <?php echo "value=" . number_format($tdgaz, 2, ',', '.');?>></td>
+                </tr>
+                <tr>
+                    <td>Tesisin tükettiği <strong>kömür</strong> miktarı (ton): </td><td><input type="text" name="tkom" <?php echo "value=" . number_format($tkom, 2, ',', '.');?>></td>
                 </tr>
                 <tr>
                     <td colspan=2><hr></td>
